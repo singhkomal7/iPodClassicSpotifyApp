@@ -1,24 +1,14 @@
-//
-//  ContentView.swift
-//  iPodClassic
-//
-//  Created by Komal Singh on 6/4/25.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var spotifyManager: SpotifyManager
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        iPodMenuView()
+            .environmentObject(spotifyManager)
+            .onAppear {
+                print("🌵 ContentView appeared, isLoggedIn: \(spotifyManager.isLoggedIn)")
+                // Data fetching is now handled by the navigation system in iPodMenuView
+            }
     }
-}
-
-#Preview {
-    ContentView()
 }
