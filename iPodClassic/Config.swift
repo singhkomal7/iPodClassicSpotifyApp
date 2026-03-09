@@ -10,7 +10,7 @@ import Foundation
 struct Config {
     static let clientID = "87c724c9210a4cdfa70a227860c3e347"
     static let redirectURI = URL(string: "kommiipodclassic://spotify-login-callback")!
-    static let clientSecret = "c7341aed1e03427ba9057d4d43585c60"
+    static let clientSecret = ""
     
     // Network timeout settings
     static let defaultTimeoutInterval: TimeInterval = 30.0
