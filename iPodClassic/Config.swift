@@ -8,7 +8,7 @@
 import Foundation
 
 struct Config {
-    static let clientID = "87c724c9210a4cdfa70a227860c3e347"
+    static let clientID = ""
     static let redirectURI = URL(string: "kommiipodclassic://spotify-login-callback")!
     static let clientSecret = ""
     
